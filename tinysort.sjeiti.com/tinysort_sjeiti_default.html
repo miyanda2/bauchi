@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TinySort</title>
+	<link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://tinysort.sjeiti.com/style/screen.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://tinysort.sjeiti.com/index.html">TinySort</a></div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">usage<b class="caret"></b></a>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="tinysort_sjeiti_default.html#options">options</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">examples<b class="caret"></b></a>
+					<ul role="menu" class="dropdown-menu">
+						<li><a href="tinysort_sjeiti_default.html#asdf">asdf</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="firstparagraph">
+  <div class="container">
+    <div class="col-sm-9"></div>
+    <div class="col-sm-3 download">
+      <h3 class="nav-label">source</h3>
+      <a href="https://github.com/Sjeiti/TinySort" class="btn btn-sm btn-download">https://github.com/Sjeiti/TinySort</a>
+      <input value="npm i -S tinysort" class="btn btn-sm btn-source">
+      <input type="radio" name="wrap" id="wrap-cdn" checked="checked" class="unveal"><label for="wrap-cdn" class="btn btn-sm">cdn</label><input type="radio" name="wrap" id="wrap-download" class="unveal"><label for="wrap-download" class="btn btn-sm">download</label>
+      <div class="wrap wrap-download">
+        <a download="tinysort.js" href="http://tinysort.sjeiti.com/dist/tinysort.js" class="btn btn-sm btn-download filesize" data-filesize="19kB">tinysort.js</a>
+        <a download="tinysort.min.js" href="http://tinysort.sjeiti.com/dist/tinysort.min.js" class="btn btn-sm btn-download filesize" data-filesize="4kB">tinysort.min.js</a>
+        <a download="tinysort.charorder.js" href="http://tinysort.sjeiti.com/dist/tinysort.charorder.js" class="btn btn-sm btn-download filesize" data-filesize="6kB">tinysort.charorder.js</a>
+        <a download="tinysort.charorder.min.js" href="http://tinysort.sjeiti.com/dist/tinysort.charorder.min.js" class="btn btn-sm btn-download filesize" data-filesize="2kB">tinysort.charorder.min.js</a>
+        <a download="jquery.tinysort.js" href="http://tinysort.sjeiti.com/dist/jquery.tinysort.js" class="btn btn-sm btn-download filesize" data-filesize="1kB">jquery.tinysort.js</a>
+        <a download="jquery.tinysort.min.js" href="http://tinysort.sjeiti.com/dist/jquery.tinysort.min.js" class="btn btn-sm btn-download filesize" data-filesize="912B">jquery.tinysort.min.js</a>
+      </div>
+      <div class="wrap wrap-cdn">
+        <a href="http://cdnjs.com/libraries/tinysort" class="btn btn-sm btn-cdn">http://cdnjs.com/libraries/tinysort</a>
+        <input value="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.js" class="btn btn-sm btn-cdn">
+        <input value="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.min.js" class="btn btn-sm btn-cdn">
+        <input value="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.charorder.js" class="btn btn-sm btn-cdn">
+        <input value="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.charorder.min.js" class="btn btn-sm btn-cdn">
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container">
+  <div class="span8">
+    <div class="span12">
+      <div id="main">
+        <h1 id="tinysort">TinySort</h1>
+<p>TinySort is a small script that sorts HTMLElements. It sorts by text- or attribute value, or by that of one of it&#39;s children.
+The examples below should help getting you on your way.</p>
+<p>If you find a bug, have a feature request or a code improvement you can <a href="https://github.com/Sjeiti/TinySort/issues">file them here</a>. Please <a href="http://jsfiddle.net/">provide code examples</a> where applicable.</small></p>
+<p class="alert alert-warning" role="alert"><small>TinySort used to be a jQuery plugin but was rewritten to remove the jQuery dependency. It is now smaller *and* faster (and has no dependencies). Functionality is the same but changes have been made to the parameters and options.</small></p>
+
+<h2 id="usage">usage</h2>
+<p>The first (and only required) argument is a <a href="https://developer.mozilla.org/en/docs/Web/API/NodeList">NodeList</a>, an array of HTMLElements or a string (which is converted to a NodeList using document.querySelectorAll).</p>
+<pre><code class="language-javascript">tinysort(NodeList);</code></pre>
+<p>The other arguments can be an an options object.</p>
+<pre><code class="language-javascript">tinysort(NodeList,{place:&#39;end&#39;});</code></pre>
+<p>If the option object only contains a <code>selector</code> you can suffice by using the selector string instead of the object.</p>
+<pre><code class="language-javascript">tinysort(NodeList,&#39;span.surname&#39;);</code></pre>
+<p>For multiple criteria you can just overload.</p>
+<pre><code class="language-javascript">tinysort(NodeList,{selector:&#39;.surname&#39;},{selector:&#39;.name&#39;},{data:&#39;age&#39;});</code></pre>
+<p>Default settings can be changed</p>
+<pre><code class="language-javascript">tinysort.defaults.order = &#39;desc&#39;;
+tinysort.defaults.attr = &#39;title&#39;;</code></pre>
+<h3 id="options">options</h3>
+<p>The options object can have the following settings:</p>
+<p><strong>options.selector</strong> (string=undefined)
+A CSS selector to select the element to sort to.</p>
+<p><strong>options.order</strong> (string=&#39;asc&#39;)
+The order of the sorting method. Possible values are &#39;asc&#39;, &#39;desc&#39; and &#39;rand&#39;.</p>
+<p><strong>options.attr</strong> (string=null)
+Order by attribute value (ie title, href, class)</p>
+<p><strong>options.data</strong> (string=null)
+Use the data attribute for sorting.</p>
+<p><strong>options.place</strong> (string=&#39;org&#39;)
+Determines the placement of the ordered elements in respect to the unordered elements. Possible values &#39;start&#39;, &#39;end&#39;, &#39;first&#39;, &#39;last&#39; or &#39;org&#39;.</p>
+<p><strong>options.useVal</strong> (boolean=false)
+Use element value instead of text.</p>
+<p><strong>options.cases</strong> (boolean=false)
+A case sensitive sort (orders [aB,aa,ab,bb])</p>
+<p><strong>options.natural</strong> (boolean=false)
+Use natural sort order.</p>
+<p><strong>options.forceStrings</strong> (boolean=false)
+If false the string &#39;2&#39; will sort with the value 2, not the string &#39;2&#39;.</p>
+<p><strong>options.ignoreDashes</strong> (boolean=false)
+Ignores dashes when looking for numerals.</p>
+<p><strong>options.sortFunction</strong> (function=null)
+Override the default sort function. The parameters are of a type {elementObject}.</p>
+<p><strong>options.useFlex</strong> (boolean=true)
+If one parent and display flex, ordering is done by CSS (instead of DOM)</p>
+<p><strong>options.emptyEnd</strong> (boolean=true)
+Sort empty values to the end instead of the start</p>
+<p><strong>options.console</strong> (boolean=undefined)
+an optional console implementation to prevent output to console</p>
+<h2 id="examples">examples</h2>
+<h3 id="default-sorting">default sorting</h3>
+<p>The default sort simply sorts the text of each element</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xdflt&gt;li&#39;);</code></pre>
+<h3 id="sort-on-any-node">sort on any node</h3>
+<p>TinySort works on any nodeType. The following is a div with spans.</p>
+<pre><code class="language-javascript">tinysort(&#39;div#xany&gt;span&#39;);</code></pre>
+<h3 id="sorted-numbers">sorted numbers</h3>
+<p>TinySort also works on numbers.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xnum&gt;li&#39;);</code></pre>
+<h3 id="mixed-literal-and-numeral">mixed literal and numeral</h3>
+<p>In a normal sort the order would be a1,a11,a2 while you&#39;d really want it to be a1,a2,a11. TinySort corrects this:</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xmix&gt;li&#39;);</code></pre>
+<h3 id="sorted-by-attribute-value">sorted by attribute value</h3>
+<p>Sort by attribute value by adding the &#39;attr&#39; option. This will sort by attribute of, either the selection, or of the sub-selection (if provided). In this case sort is by href on the anchor sub-selection.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xval&gt;li&#39;,{selector:&#39;a&#39;,attr:&#39;href&#39;});</code></pre>
+<p>Another example: images sorted by attribute title value.</p>
+<pre><code class="language-javascript">tinysort(&#39;div#ximg&gt;img&#39;,{attr:&#39;title&#39;});</code></pre>
+<h3 id="sorted-by-sub-selection">sorted by sub-selection</h3>
+<p>You can provide an additional subselection by setting the <code>selector</code> option. If no other options are set you can also just pass the selector string instead of the options object.</p>
+<p>In this example the list elements are sorted to the text of the second span.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xsub&gt;li&#39;,&#39;span:nth-child(2)&#39;);</code></pre>
+<p>The following example will only sort the non-striked elements.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xattr&gt;li&#39;,&#39;span:not([class=striked])&#39;);</code></pre>
+<h3 id="return-only-sorted-elements">return only sorted elements</h3>
+<p>By default, all the elements are returned, even the ones excluded by your sub-selection. By parsing the additional parameter &#39;returns=true&#39; only the sorted elements are returned.
+You can also adjust the placement of the sorted values by adding the &#39;place&#39; attribute. In this case the original positions are maintained.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xret&gt;li&#39;,&#39;span:not([class=striked])&#39;,{returns:true,place:&#39;org&#39;})
+    .forEach(function(elm){
+        elm.style.color = &#39;red&#39;;
+    })
+;</code></pre>
+<h3 id="multiple-sort-criteria">multiple sort criteria</h3>
+<p>Sometimes multiple sorting criteria are required. For instance: you might want to sort a list of people first by surname then by name.</p>
+<p>For multiple sorting rules you can just overload the parameters. So tinysort(selector,options) becomes tsort(selector,options1,options2,options3...). Note that in the next example the second parameter <code>&#39;span.name&#39;</code> will be rewritten internally to <code>{selector:&#39;span.name&#39;}</code>.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xmul&gt;li&#39;,&#39;span.name&#39;,{selector:&#39;span.date&#39;,data:&#39;timestamp&#39;});</code></pre>
+<h3 id="non-latin-characters">non-latin characters</h3>
+<p>A normal array sorts according to <a href="http://en.wikipedia.org/wiki/Unicode">Unicode</a>, which is wrong for most languages. For correct ordering you can use the charorder plugin to parse a rule with the &#39;charOrder&#39; parameter. This is a string that consist of exceptions, not the entire alfabet. For characters that should sort equally use brackets. For characters that consist of multiple characters use curly braces. For example:</p>
+<ul>
+<li><p><strong>cčć</strong> sorts c č and ć in that order</p>
+</li>
+<li><p><strong>æøå</strong> in absence of a latin character æ ø and å are sorted after z</p>
+</li>
+<li><p><strong>ι[ίϊΐ]</strong> ί ϊ and ΐ are sorted equally to ι</p>
+</li>
+<li><p><strong>d{dž}</strong> dž is sorted as one character after d</p>
+</li>
+<li><p><strong>å[{Aa}]</strong> Aa is sorted as one character, equal to å, after z</p>
+</li>
+</ul>
+<p>Here some real examples:</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#greek&gt;li&#39;,{charOrder:&#39;α[ά]βγδε[έ]ζη[ή]θι[ίϊΐ]κλμνξο[ό]πρστυ[ύϋΰ]φχψω[ώ]&#39;});</code></pre>
+<pre><code class="language-javascript">tinysort(&#39;ul#danish&gt;li&#39;,{charOrder:&#39;æøå[{Aa}]&#39;});</code></pre>
+<pre><code class="language-javascript">tinysort(&#39;ul#serb&gt;li&#39;,{charOrder:&#39;cčćd{dž}đl{lj}n{nj}sšzž&#39;});</code></pre>
+<p>Here are some example languages:</p>
+<div class="table-responsive">
+<table class="props">
+    <thead><tr>
+        <th>Language</th>
+        <th>charOrder</th>
+    </tr></thead>
+    <tfoot><tr>
+        <td colspan="2">since only one of these is my native language please feel free to contact me if you think corrections are in order</td>
+    </tr></tfoot>
+    <tbody>
+        <tr><td>Cyrilic</td><td>абвгдђежзијклљмнњопрстћуфхцчџш</td></tr>
+        <tr><td>Czech</td><td>a[á]cčd[ď]e[éě]h{ch}i[í]n[ň]o[ó]rřsšt[ť]u[úů]y[ý]zž</td></tr>
+        <tr><td>Danish and Norwegian</td><td>æøå[{Aa}]</td></tr>
+        <tr><td>Dutch</td><td>a[áàâä]c[ç]e[éèêë]i[íìîï]o[óòôö]u[úùûü]</td></tr>
+        <tr><td>French</td><td>a[àâ]c[ç]e[éèêë]i[ïî]o[ôœ]u[ûù]</td></tr>
+        <tr><td>German</td><td>a[ä]o[ö]s{ss}u[ü]</td></tr>
+        <tr><td>Greek</td><td>α[ά]βγδε[έ]ζη[ή]θι[ίϊΐ]κλμνξο[ό]πρστυ[ύϋΰ]φχψω[ώ]</td></tr>
+        <tr><td>Icelandic</td><td>a[á]dðe[é]i[í]o[ó]u[ú]y[ý]zþæö</td></tr>
+        <tr><td>Polish</td><td>aąbcćeęlłnńoósśuúzźż</td></tr>
+        <tr><td>Russian</td><td>абвгдеёжзийклмнопрстуфхцчшщъыьэюя</td></tr>
+        <tr><td>Serbo-Croatian</td><td>cčćd{dž}đl{lj}n{nj}sšzž</td></tr>
+        <tr><td>Spanish</td><td>a[á]c{ch}e[é]i[í]l{ll}nño[ó]u[ú]y[ý]</td></tr>
+        <tr><td>Swedish</td><td>åäö</td></tr>
+    </tbody>
+</table>
+</div>
+
+<h3 id="natural-sorting">natural sorting</h3>
+<p>Machines read differently than you do. Natural sorting makes your machine more like you by enabling it to differentiate between numeric values within a string. </p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xnat&gt;li&#39;,{natural:true});</code></pre>
+<h3 id="sort-by-value">sort by value</h3>
+<p>The value property is primarily used to get the values of form elements, but list-elements also have the value property. By setting the useVal option you can also sort by this form element value.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xinp&gt;li&#39;,{selector:&#39;input&#39;,useVal:true});</code></pre>
+<h3 id="sort-by-data">sort by data</h3>
+<p>Sort by data attribute by setting the <code>data</code> option.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xdta&gt;li&#39;,{selector:&#39;a&#39;,data:&#39;foo&#39;});</code></pre>
+<h3 id="sorted-descending">sorted descending</h3>
+<p>Sort in ascending or descending order  by setting the <code>order</code> option to <code>asc</code> or <code>desc</code>.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xdesc&gt;li&#39;,{order:&#39;desc&#39;});</code></pre>
+<h3 id="randomize">randomize</h3>
+<p>TinySort can also order randomly (or is that a contradiction).</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xrnd&gt;li&#39;,{order:&#39;rand&#39;});</code></pre>
+<h3 id="custom-sort-function">custom sort function</h3>
+<p>Custom sort functions are similar to those you use with regular Javascript arrays with the exception that the parameters a and b are objects of a similar type {elementObject}, an object with the following properties:</p>
+<ul>
+<li>elm {HTMLElement}: The element</li>
+<li>pos {number}: original position</li>
+<li>posn {number}: original position on the partial list</li>
+</ul>
+<p>When you use the custom sort function all other properties will be ignored because it expects a custom implementation.</p>
+<pre><code class="language-javascript">tinysort(&#39;ul#xcst&gt;li&#39;,{sortFunction:function(a,b){
+var lenA = a.elm.textContent.length
+    ,lenB = b.elm.textContent.length;
+return lenA===lenB?0:(lenA&gt;lenB?1:-1);
+}});</code></pre>
+<h3 id="sorting-tables">sorting tables</h3>
+<p>With a little extra code you can create a sortable table:</p>
+<pre><code class="language-javascript">var table = document.getElementById(&#39;xtable&#39;)
+    ,tableHead = table.querySelector(&#39;thead&#39;)
+    ,tableHeaders = tableHead.querySelectorAll(&#39;th&#39;)
+    ,tableBody = table.querySelector(&#39;tbody&#39;)
+;
+tableHead.addEventListener(&#39;click&#39;,function(e){
+    var tableHeader = e.target
+        ,textContent = tableHeader.textContent
+        ,tableHeaderIndex,isAscending,order
+    ;
+    if (textContent!==&#39;add row&#39;) {
+        while (tableHeader.nodeName!==&#39;TH&#39;) {
+            tableHeader = tableHeader.parentNode;
+        }
+        tableHeaderIndex = Array.prototype.indexOf.call(tableHeaders,tableHeader);
+        isAscending = tableHeader.getAttribute(&#39;data-order&#39;)===&#39;asc&#39;;
+        order = isAscending?&#39;desc&#39;:&#39;asc&#39;;
+        tableHeader.setAttribute(&#39;data-order&#39;,order);
+        tinysort(
+            tableBody.querySelectorAll(&#39;tr&#39;)
+            ,{
+                selector:&#39;td:nth-child(&#39;+(tableHeaderIndex+1)+&#39;)&#39;
+                ,order: order
+            }
+        );
+    }
+});</code></pre>
+<div class="table-responsive">
+<table class="props xmpl" id="xtable">
+    <thead>
+        <tr>
+            <th><a>word</a></th>
+            <th><a>int</a></th>
+            <th><a>float</a></th>
+            <th><a>mixed</a></th>
+            <th><a>add row</a></th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</div>
+
+<h3 id="animated-sorting">animated sorting</h3>
+<p>Tinysort has no built in animating features but it can quite easily be accomplished through regular js/jQuery.</p>
+<style type="text/css">
+    ul#xanim {
+        position: relative;
+        display: block;
+    }
+    ul#xanim li {
+        transition: top 500ms;
+        -webkit-transition: top 500ms;
+    }
+</style>
+
+<pre><code class="language-javascript">var ul = document.getElementById(&#39;xanim&#39;)
+    ,lis = ul.querySelectorAll(&#39;li&#39;)
+    ,liHeight = lis[0].offsetHeight
+;
+ul.style.height = ul.offsetHeight+&#39;px&#39;;
+for (var i= 0,l=lis.length;i&lt;l;i++) {
+    var li = lis[i];
+    li.style.position = &#39;absolute&#39;;
+    li.style.top = i*liHeight+&#39;px&#39;;
+}
+tinysort(&#39;ul#xanim&gt;li&#39;).forEach(function(elm,i){
+    setTimeout((function(elm,i){
+        elm.style.top = i*liHeight+&#39;px&#39;;
+    }).bind(null,elm,i),40);
+});</code></pre>
+
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="span3">
+      <div id="toc"></div>
+    </div>
+    <br clear="both">
+  </div>
+</section>
+
+<footer id="colophon">
+  <span class="copyright">Ron Valstar</span>
+  <span class="jsdoc-message"></span>
+</footer>
+
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+<script src="http://tinysort.sjeiti.com/js/main.js"></script>
+<script src="http://tinysort.sjeiti.com/dist/tinysort.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/rainbow.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/generic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/html.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/css.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/javascript.js"></script>
+
+</body>
+</html>

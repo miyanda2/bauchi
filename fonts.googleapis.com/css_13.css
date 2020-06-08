@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Barlow Condensed Light Italic'), local('BarlowCondensed-LightItalic'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrc3PmtYkA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Barlow Condensed Italic'), local('BarlowCondensed-Italic'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxxL3I-JCGChYJ8VI-L6OO_au7B6xTj1lH1.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Barlow Condensed Medium Italic'), local('BarlowCondensed-MediumItalic'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrK3LmtYkA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Barlow Condensed SemiBold Italic'), local('BarlowCondensed-SemiBoldItalic'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrB3XmtYkA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Barlow Condensed Bold Italic'), local('BarlowCondensed-BoldItalic'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrY3TmtYkA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Barlow Condensed Light'), local('BarlowCondensed-Light'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxwL3I-JCGChYJ8VI-L6OO_au7B47rxz3jWvw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTx3L3I-JCGChYJ8VI-L6OO_au7B6x_T3A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Barlow Condensed Medium'), local('BarlowCondensed-Medium'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3jWvw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Barlow Condensed SemiBold'), local('BarlowCondensed-SemiBold'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3jWvw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Barlow Condensed Bold'), local('BarlowCondensed-Bold'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3jWvw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Titillium Web Light Italic'), local('TitilliumWeb-LightItalic'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5ya.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Titillium Web Italic'), local('TitilliumWeb-Italic'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Titillium Web SemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5ya.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Titillium Web Bold Italic'), local('TitilliumWeb-BoldItalic'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5ya.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzZQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdM3mCw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzZQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzZQ.woff) format('woff');
+}

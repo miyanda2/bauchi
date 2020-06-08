@@ -1,0 +1,426 @@
+a {
+    color: #006633}
+.text-primary {
+    color: #006633}
+.bg-primary {
+    background-color: #006633}
+.btn-primary {
+    background-color: #006633;
+}
+.btn-primary:hover {
+    background-color: #006633;
+}
+.badge {
+    color: #006633;
+}
+.btn-link {
+    color: #006633;
+}
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    background-color: #006633;
+}
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    border-color: #006633}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #006633}
+.pagination>li>a,
+.pagination>li>span {
+    color: #006633;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #006633;
+    border-color: #006633}
+.label-primary {
+    background-color: #006633}
+.list-group-item.active>.badge,
+.nav-pills>.active>a>.badge {
+    color: #006633;
+}
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover {
+    border-color: #006633}
+.progress-bar {
+    background-color: #006633;
+}
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    background-color: #006633;
+    border-color: #006633}
+.panel-primary {
+    border-color: #006633}
+.panel-primary>.panel-heading {
+    background-color: #006633;
+    border-color: #006633}
+.panel-primary>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #006633}
+.panel-primary>.panel-heading .badge {
+    color: #006633;
+}
+.panel-primary>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #006633}
+
+.c-post-section .c-post-gallery .owl-buttons > div:hover {
+    background-color: #006633;
+}
+::-moz-selection {
+    background-color: #006633;
+
+}
+
+::selection {
+    background-color: #006633;
+
+}
+
+.mob-menu li a:hover,
+.mob-menu .current-menu-item > a,
+.mob-menu .current-menu-parent > a,
+.mob-menu .current-menu-ancestor > a,
+.mob-menu ul li > a:hover > .di,
+.mob-menu .current-menu-item > a > .di,
+.mob-menu .current-menu-parent > a > .di,
+.mob-menu .current-menu-ancestor > a > .di,
+.mob-header-content .header-top-menu li a:hover,
+.mob-header-content .header-top-menu .current-menu-item > a,
+.mob-header-content .header-top-menu .current-menu-parent > a,
+.mob-header-content .header-top-menu .current-menu-ancestor > a,
+.mob-header-content .header-top-menu ul li > a:hover > .di,
+.mob-header-content .header-top-menu .current-menu-item > a > .di,
+.mob-header-content .header-top-menu .current-menu-parent > a > .di,
+.mob-header-content .header-top-menu .current-menu-ancestor > a > .di, {
+    color: #006633 !important;
+}
+
+.sidebar a:not(.button):not(.ui-slider-handle) {
+    color: #006633;
+}
+
+.version1 .header-top {
+    background-color: #006633;
+}
+
+.count-icon,
+.event-icon  {
+    color: #006633;
+}
+
+.version1 .desk-cart-toggle span {
+
+    background-color: #006633;
+}
+
+.version1 .woo-cart .widget_shopping_cart p.buttons > a {
+  
+    background-color: #006633;
+}
+
+.version1.effect-underline .desk-menu > ul > li > a:after,
+.version1.effect-overline .desk-menu > ul > li > a:after,
+.version1.effect-fill .desk-menu > ul > li:hover > a,
+.version1.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version1.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version1.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version1.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+}
+.version1.effect-outline .desk-menu > ul > li:hover > a,
+.version1.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version1.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version1.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version1.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+
+.version1.fixed-true.active .desk-cart-toggle span {
+
+    background-color: #006633;
+}
+
+.version1.fixed-true.active.effect-outline .desk-menu > ul > li:hover > a,
+.version1.fixed-true.active.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version1.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version1.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version1.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+.version1.fixed-true.active.effect-underline .desk-menu > ul > li > a:after,
+.version1.fixed-true.active.effect-overline .desk-menu > ul > li > a:after,
+.version1.fixed-true.active.effect-fill .desk-menu > ul > li:hover > a,
+.version1.fixed-true.active.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version1.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version1.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version1.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+}
+
+.version2 .desk-cart-toggle span {
+
+    background-color: #006633;
+}
+
+.version2 .woo-cart .widget_shopping_cart p.buttons > a {
+ 
+    background-color: #006633;
+}
+
+.version2.effect-underline .desk-menu > ul > li > a:after,
+.version2.effect-overline .desk-menu > ul > li > a:after,
+.version2.effect-fill .desk-menu > ul > li:hover > a,
+.version2.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version2.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version2.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version2.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+ 
+}
+.version2.effect-outline .desk-menu > ul > li:hover > a,
+.version2.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version2.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version2.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version2.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+
+.version2.fixed-true.active.effect-outline .desk-menu > ul > li:hover > a,
+.version2.fixed-true.active.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version2.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version2.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version2.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+.version2.fixed-true.active.effect-underline .desk-menu > ul > li > a:after,
+.version2.fixed-true.active.effect-overline .desk-menu > ul > li > a:after,
+.version2.fixed-true.active.effect-fill .desk-menu > ul > li:hover > a,
+.version2.fixed-true.active.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version2.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version2.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version2.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+}
+
+.version3 .desk-cart-toggle span {
+
+    background-color: #006633;
+}
+
+.version3 .woo-cart .widget_shopping_cart p.buttons > a {
+
+    background-color: #006633;
+}
+
+.version3.effect-underline .desk-menu > ul > li > a:after,
+.version3.effect-overline .desk-menu > ul > li > a:after,
+.version3.effect-fill .desk-menu > ul > li:hover > a,
+.version3.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version3.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version3.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version3.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633}
+.version3.effect-outline .desk-menu > ul > li:hover > a,
+.version3.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version3.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version3.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version3.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+.version3.fixed-true.active .desk-cart-toggle span {
+
+    background-color: #006633;
+}
+
+.version3.fixed-true.active.effect-outline .desk-menu > ul > li:hover > a,
+.version3.fixed-true.active.effect-outline .desk-menu > ul > li.one-page-active > a,
+.version3.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-item > a,
+.version3.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-parent > a,
+.version3.fixed-true.active.effect-outline .desk-menu > ul > li.current-menu-ancestor > a {
+    box-shadow: inset 0 0 0 2px #006633;
+}
+.version3.fixed-true.active.effect-underline .desk-menu > ul > li > a:after,
+.version3.fixed-true.active.effect-overline .desk-menu > ul > li > a:after,
+.version3.fixed-true.active.effect-fill .desk-menu > ul > li:hover > a,
+.version3.fixed-true.active.effect-fill .desk-menu > ul > li.one-page-active > a,
+.version3.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.version3.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.version3.fixed-true.active.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+}
+.one-page-bullets a[href*="#"]:hover,
+.one-page-bullets .one-page-active a[href*="#"] {
+    box-shadow: inset 0 0 0 10px #006633;
+}
+.desk-menu > ul > li > a > .txt .label:before {
+    border-color: #006633 transparent transparent transparent;
+}
+
+.header3 .version1.effect-underline .desk-menu > ul > li > a:after,
+.header3 .version1.effect-overline .desk-menu > ul > li > a:after,
+.header3 .version1.effect-fill .desk-menu > ul > li:hover > a,
+.header3 .version1.effect-fill .desk-menu > ul > li.one-page-active > a,
+.header3 .version1.effect-fill .desk-menu > ul > li.current-menu-item > a,
+.header3 .version1.effect-fill .desk-menu > ul > li.current-menu-parent > a,
+.header3 .version1.effect-fill .desk-menu > ul > li.current-menu-ancestor > a {
+    background-color: #006633;
+    box-shadow: inset 0 0 0 2px #006633;
+}
+.header3 .desk-menu > ul > li:hover > a,
+.header3 .desk-menu > ul > li.one-page-active > a,
+.header3 .desk-menu > ul > li.current-menu-item > a,
+.header3 .desk-menu > ul > li.current-menu-parent > a,
+.header3 .desk-menu > ul > li.current-menu-ancestor > a {
+    color: #006633;
+}
+.header4 .version1 .header-body {
+    background-color: #006633;
+}
+.header7 .version1 .header-top {
+    background-color: #006633;
+
+}
+
+.header9 .version1 .header-body {
+    background-color: #006633;
+}
+
+.br-top3 {
+    border-top: 3px solid #006633;
+}
+
+.right-pie {
+    background: #006633;
+
+}
+
+.pull-right {
+    background: #006633;
+}
+
+.wp-pagenavi span.current {
+
+    background: #006633;
+}
+
+.widget-area a:hover {
+    color: #006633;
+}
+
+.current {
+
+    background: #006633;
+}
+
+.page-link a {
+    background-color: #006633;
+
+}
+
+
+p.demo_store {
+
+    background-color: #006633;
+
+}
+
+.woocommerce a.remove {
+
+    color: #006633!important;
+
+}
+
+.woocommerce span.onsale {
+
+    background-color: #006633;
+
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background-color: #006633;
+
+}
+
+.woocommerce #respond input#submit.alt.disabled,
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt:disabled[disabled],
+.woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt:disabled[disabled],
+.woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt:disabled[disabled],
+.woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce input.button.alt.disabled,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt:disabled[disabled],
+.woocommerce input.button.alt:disabled[disabled]:hover {
+    background-color: #006633;
+
+}
+
+
+.woocommerce .star-rating {
+
+    color: #006633;
+
+}
+
+.woocommerce .woocommerce-product-rating .star-rating {
+   
+    color: #006633;
+ 
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+
+    background-color: #006633;
+
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+
+    background-color: #006633}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+
+    border-top: 3px solid #006633;
+
+}
+
+.woocommerce-message {
+    border-top-color: #006633}
+
+.woocommerce-message:before {
+ 
+    color: #006633}
+
+.hood-text-skin {
+
+    color: #006633;
+
+}
